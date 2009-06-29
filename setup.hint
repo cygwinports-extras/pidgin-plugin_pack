@@ -1,5 +1,5 @@
 category: Gnome Net
-requires: cygwin glib2 gdk-pixbuf2 gtk2-x11 gtkspell libX11_6 libaspell15 libintl8 libpurple libtalkfilters1 pango pidgin
+requires: glib2 gdk-pixbuf2 gtk2-x11 gtkspell libX11_6 libaspell15 libintl8 libpurple libtalkfilters1 pango pidgin
 sdesc: "Assortment of simple Pidgin plugins"
 ldesc: "The Purple Plugin Pack was originally created as a way to 
 distribute an ever growing lists of simple Pidgin plugins. It has since 
