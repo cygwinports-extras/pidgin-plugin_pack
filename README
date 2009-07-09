@@ -5,19 +5,19 @@ ever growing lists of simple Pidgin plugins. It has since grown from its
 origins of about 6 plugins to nearly 50.
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  gdk-pixbuf2-2.12.9-1
-  glib2-2.14.6-1
-  gtk2-x11-2.12.9-1
-  gtkspell-2.0.12-1
-  libX11_6-1.1.3-1
-  libaspell15-0.60.5-1
-  libintl8-0.15-1
-  libpurple-2.4.2-1
-  libtalkfilters1-2.3.8-1
-  pango-1.18.4-1
-  pidgin-2.4.2-1
-  xmms-1.2.11-1
+  cygwin-1.7.0-50
+  libenchant1-1.4.2-11
+  libgcc1-4.3.2-2
+  libgdk_pixbuf2.0_0-2.16.2-1
+  libglib2.0_0-2.20.3-1
+  libgtk2.0_0-2.16.2-1
+  libgtkspell0-2.0.15-10
+  libintl8-0.17-11
+  libpango1.0_0-1.24.2-1
+  libpurple0-2.5.8-1
+  libtalkfilters1-2.3.8-10
+  libX11_6-1.2-10
+  pidgin-2.5.8-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -45,15 +45,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack pidgin-plugin_pack-2.3.0-X-src.tar.bz2
+  unpack pidgin-plugin_pack-2.5.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./pidgin-plugin_pack-2.3.0-X.cygport all
+  cygport ./pidgin-plugin_pack-2.5.1-X.cygport all
 
 This will create:
-  /usr/src/pidgin-plugin_pack-2.3.0-X-src.tar.bz2
-  /usr/src/pidgin-plugin_pack-2.3.0-X.tar.bz2
+  /usr/src/pidgin-plugin_pack-2.5.1-X-src.tar.bz2
+  /usr/src/pidgin-plugin_pack-2.5.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -77,6 +77,8 @@ Files included in the binary package:
   /usr/lib/pidgin/irssi.la
   /usr/lib/pidgin/lastseen.dll
   /usr/lib/pidgin/lastseen.la
+  /usr/lib/pidgin/listlog.dll
+  /usr/lib/pidgin/listlog.la
   /usr/lib/pidgin/mystatusbox.dll
   /usr/lib/pidgin/mystatusbox.la
   /usr/lib/pidgin/nicksaid.dll
@@ -89,18 +91,18 @@ Files included in the binary package:
   /usr/lib/pidgin/sepandtab.la
   /usr/lib/pidgin/switchspell.dll
   /usr/lib/pidgin/switchspell.la
-  /usr/lib/pidgin/talkfilters.dll
-  /usr/lib/pidgin/talkfilters.la
   /usr/lib/pidgin/timelog.dll
   /usr/lib/pidgin/timelog.la
   /usr/lib/pidgin/xchat-chats.dll
   /usr/lib/pidgin/xchat-chats.la
-  /usr/lib/pidgin/xmmsremote.dll
-  /usr/lib/pidgin/xmmsremote.la
+  /usr/lib/purple-2/autoprofile.dll
+  /usr/lib/purple-2/autoprofile.la
   /usr/lib/purple-2/autoreply.dll
   /usr/lib/purple-2/autoreply.la
   /usr/lib/purple-2/bash.dll
   /usr/lib/purple-2/bash.la
+  /usr/lib/purple-2/colorize.dll
+  /usr/lib/purple-2/colorize.la
   /usr/lib/purple-2/cygsnpp.dll
   /usr/lib/purple-2/dewysiwygification.dll
   /usr/lib/purple-2/dewysiwygification.la
@@ -108,8 +110,14 @@ Files included in the binary package:
   /usr/lib/purple-2/dice.la
   /usr/lib/purple-2/eight_ball.dll
   /usr/lib/purple-2/eight_ball.la
+  /usr/lib/purple-2/findip.dll
+  /usr/lib/purple-2/findip.la
   /usr/lib/purple-2/flip.dll
   /usr/lib/purple-2/flip.la
+  /usr/lib/purple-2/google.dll
+  /usr/lib/purple-2/google.la
+  /usr/lib/purple-2/groupmsg.dll
+  /usr/lib/purple-2/groupmsg.la
   /usr/lib/purple-2/highlight.dll
   /usr/lib/purple-2/highlight.la
   /usr/lib/purple-2/ignore.dll
@@ -131,23 +139,19 @@ Files included in the binary package:
   /usr/lib/purple-2/simfix.la
   /usr/lib/purple-2/slashexec.dll
   /usr/lib/purple-2/slashexec.la
+  /usr/lib/purple-2/splitter.dll
+  /usr/lib/purple-2/splitter.la
   /usr/lib/purple-2/sslinfo.dll
   /usr/lib/purple-2/sslinfo.la
-  /usr/share/doc/pidgin-plugin_pack-2.3.0/AUTHORS
-  /usr/share/doc/pidgin-plugin_pack-2.3.0/COPYING
-  /usr/share/doc/pidgin-plugin_pack-2.3.0/ChangeLog
-  /usr/share/doc/pidgin-plugin_pack-2.3.0/INSTALL
-  /usr/share/doc/pidgin-plugin_pack-2.3.0/NEWS
-  /usr/share/doc/pidgin-plugin_pack-2.3.0/README
+  /usr/share/doc/pidgin-plugin_pack/AUTHORS
+  /usr/share/doc/pidgin-plugin_pack/COPYING
+  /usr/share/doc/pidgin-plugin_pack/ChangeLog
+  /usr/share/doc/pidgin-plugin_pack/NEWS
+  /usr/share/doc/pidgin-plugin_pack/README
   /usr/share/locale/en_AU/LC_MESSAGES/plugin_pack.mo
   /usr/share/locale/es_ES/LC_MESSAGES/plugin_pack.mo
   /usr/share/locale/fr/LC_MESSAGES/plugin_pack.mo
-  /usr/share/pixmaps/pidgin/plugin_pack/xmmsremote/next.png
-  /usr/share/pixmaps/pidgin/plugin_pack/xmmsremote/pause.png
-  /usr/share/pixmaps/pidgin/plugin_pack/xmmsremote/play.png
-  /usr/share/pixmaps/pidgin/plugin_pack/xmmsremote/previous.png
-  /usr/share/pixmaps/pidgin/plugin_pack/xmmsremote/stop.png
-  /usr/share/pixmaps/pidgin/plugin_pack/xmmsremote/xmms.png
+  /usr/share/locale/vi/LC_MESSAGES/plugin_pack.mo
   /usr/share/pixmaps/pidgin/protocols/16/napster.png
   /usr/share/pixmaps/pidgin/protocols/22/napster.png
   /usr/share/pixmaps/pidgin/protocols/48/napster.png
@@ -156,8 +160,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 2.3.0-1 -----
-Initial release for Cygwin.
+----- version 2.5.1-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

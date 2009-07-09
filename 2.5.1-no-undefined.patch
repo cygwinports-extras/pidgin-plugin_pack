@@ -1,0 +1,13 @@
+pango_cairo_* symbols are used by the splitter plugin.
+
+--- origsrc/purple-plugin_pack-2.5.1/configure.ac	2008-12-25 23:46:44.000000000 -0600
++++ src/purple-plugin_pack-2.5.1/configure.ac	2009-07-09 02:01:15.531513500 -0500
+@@ -232,7 +232,7 @@ dnl ####################################
+ HAVE_PANGO="no"
+ PANGO_CFLAGS=""
+ PANGO_LIBS=""
+-PKG_CHECK_MODULES(PANGO, [pango], HAVE_PANGO="yes", HAVE_PANGO="no")
++PKG_CHECK_MODULES(PANGO, [pangocairo], HAVE_PANGO="yes", HAVE_PANGO="no")
+ AC_SUBST(PANGO_CFLAGS)
+ AC_SUBST(PANGO_CFLAGS)
+ 

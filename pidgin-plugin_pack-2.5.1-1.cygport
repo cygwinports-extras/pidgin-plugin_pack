@@ -3,7 +3,9 @@ inherit gnome2
 
 DESCRIPTION="Assortment of plugins for libpurple and Pidgin"
 HOMEPAGE="http://plugins.guifications.org/trac/"
-SRC_URI="http://downloads.guifications.org/plugins/Plugin%20Pack/${ORIG_PN}-${PV}.tar.bz2"
+# website doesn't allow for direct downloading
+SRC_URI="mirror://gentoo/${ORIG_PN}-${PV}.tar.bz2"
 
-ACLOCAL_FLAGS="-I m4"
+PATCH_URI="2.5.1-no-undefined.patch"
+
 MAKEOPTS+=" LDFLAGS=-no-undefined"
