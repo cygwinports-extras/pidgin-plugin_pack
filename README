@@ -5,35 +5,33 @@ ever growing lists of simple Pidgin plugins. It has since grown from its
 origins of about 6 plugins to nearly 50.
 
 Runtime requirements:
-  cygwin-1.7.0-50
+  cygwin-1.7.0-62
   libenchant1-1.4.2-11
-  libgcc1-4.3.2-2
-  libgdk_pixbuf2.0_0-2.16.2-1
-  libglib2.0_0-2.20.3-1
-  libgtk2.0_0-2.16.2-1
+  libgcc1-4.3.4-1
+  libgdk_pixbuf2.0_0-2.16.6-1
+  libglib2.0_0-2.20.5-1
+  libgtk2.0_0-2.16.6-1
   libgtkspell0-2.0.15-10
   libintl8-0.17-11
-  libpango1.0_0-1.24.2-1
+  libpango1.0_0-1.24.5-1
   libpurple0-2.5.8-1
-  libtalkfilters1-2.3.8-10
-  libX11_6-1.2-10
-  pidgin-2.5.8-1
+  libX11_6-1.2.2-2
+  pidgin-2.6.2-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.10-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gettext-devel-0.15-1
-  glib2-devel-2.14.6-1
-  gnome-common-2.20.0-1
-  intltool-0.36.3-1
-  libtool-2.2.2-2
-  make-3.81-1
-  pkg-config-0.21-1
+  autoconf2.5-2.63-10
+  automake1.10-1.10.2-1
+  binutils-2.19.51-1
+  cygport-0.9.9-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-1
+  gettext-devel-0.17-11
+  gnome-common-2.26.0-2
+  intltool-0.40.6-1
+  libtool-2.2.7a-14
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -45,120 +43,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack pidgin-plugin_pack-2.5.1-X-src.tar.bz2
+  unpack pidgin-plugin_pack-2.6.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./pidgin-plugin_pack-2.5.1-X.cygport all
+  cygport ./pidgin-plugin_pack-2.6.0-X.cygport all
 
 This will create:
-  /usr/src/pidgin-plugin_pack-2.5.1-X-src.tar.bz2
-  /usr/src/pidgin-plugin_pack-2.5.1-X.tar.bz2
+  /usr/src/pidgin-plugin_pack-2.6.0-X-src.tar.bz2
+  /usr/src/pidgin-plugin_pack-2.6.0-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/lib/pidgin/album.dll
-  /usr/lib/pidgin/album.la
-  /usr/lib/pidgin/blistops.dll
-  /usr/lib/pidgin/blistops.la
-  /usr/lib/pidgin/convbadger.dll
-  /usr/lib/pidgin/convbadger.la
-  /usr/lib/pidgin/difftopic.dll
-  /usr/lib/pidgin/difftopic.la
-  /usr/lib/pidgin/enhancedhist.dll
-  /usr/lib/pidgin/enhancedhist.la
-  /usr/lib/pidgin/gRIM.dll
-  /usr/lib/pidgin/gRIM.la
-  /usr/lib/pidgin/infopane.dll
-  /usr/lib/pidgin/infopane.la
-  /usr/lib/pidgin/irssi.dll
-  /usr/lib/pidgin/irssi.la
-  /usr/lib/pidgin/lastseen.dll
-  /usr/lib/pidgin/lastseen.la
-  /usr/lib/pidgin/listlog.dll
-  /usr/lib/pidgin/listlog.la
-  /usr/lib/pidgin/mystatusbox.dll
-  /usr/lib/pidgin/mystatusbox.la
-  /usr/lib/pidgin/nicksaid.dll
-  /usr/lib/pidgin/nicksaid.la
-  /usr/lib/pidgin/pidgin-schedule.dll
-  /usr/lib/pidgin/pidgin-schedule.la
-  /usr/lib/pidgin/plonkers.dll
-  /usr/lib/pidgin/plonkers.la
-  /usr/lib/pidgin/sepandtab.dll
-  /usr/lib/pidgin/sepandtab.la
-  /usr/lib/pidgin/switchspell.dll
-  /usr/lib/pidgin/switchspell.la
-  /usr/lib/pidgin/timelog.dll
-  /usr/lib/pidgin/timelog.la
-  /usr/lib/pidgin/xchat-chats.dll
-  /usr/lib/pidgin/xchat-chats.la
-  /usr/lib/purple-2/autoprofile.dll
-  /usr/lib/purple-2/autoprofile.la
-  /usr/lib/purple-2/autoreply.dll
-  /usr/lib/purple-2/autoreply.la
-  /usr/lib/purple-2/bash.dll
-  /usr/lib/purple-2/bash.la
-  /usr/lib/purple-2/colorize.dll
-  /usr/lib/purple-2/colorize.la
-  /usr/lib/purple-2/cygsnpp.dll
-  /usr/lib/purple-2/dewysiwygification.dll
-  /usr/lib/purple-2/dewysiwygification.la
-  /usr/lib/purple-2/dice.dll
-  /usr/lib/purple-2/dice.la
-  /usr/lib/purple-2/eight_ball.dll
-  /usr/lib/purple-2/eight_ball.la
-  /usr/lib/purple-2/findip.dll
-  /usr/lib/purple-2/findip.la
-  /usr/lib/purple-2/flip.dll
-  /usr/lib/purple-2/flip.la
-  /usr/lib/purple-2/google.dll
-  /usr/lib/purple-2/google.la
-  /usr/lib/purple-2/groupmsg.dll
-  /usr/lib/purple-2/groupmsg.la
-  /usr/lib/purple-2/highlight.dll
-  /usr/lib/purple-2/highlight.la
-  /usr/lib/purple-2/ignore.dll
-  /usr/lib/purple-2/ignore.la
-  /usr/lib/purple-2/irc-more.dll
-  /usr/lib/purple-2/irc-more.la
-  /usr/lib/purple-2/irchelper.dll
-  /usr/lib/purple-2/irchelper.la
-  /usr/lib/purple-2/libsnpp.la
-  /usr/lib/purple-2/listhandler.dll
-  /usr/lib/purple-2/listhandler.la
-  /usr/lib/purple-2/napster.dll
-  /usr/lib/purple-2/napster.la
-  /usr/lib/purple-2/oldlogger.dll
-  /usr/lib/purple-2/oldlogger.la
-  /usr/lib/purple-2/showoffline.dll
-  /usr/lib/purple-2/showoffline.la
-  /usr/lib/purple-2/simfix.dll
-  /usr/lib/purple-2/simfix.la
-  /usr/lib/purple-2/slashexec.dll
-  /usr/lib/purple-2/slashexec.la
-  /usr/lib/purple-2/splitter.dll
-  /usr/lib/purple-2/splitter.la
-  /usr/lib/purple-2/sslinfo.dll
-  /usr/lib/purple-2/sslinfo.la
-  /usr/share/doc/pidgin-plugin_pack/AUTHORS
-  /usr/share/doc/pidgin-plugin_pack/COPYING
-  /usr/share/doc/pidgin-plugin_pack/ChangeLog
-  /usr/share/doc/pidgin-plugin_pack/NEWS
-  /usr/share/doc/pidgin-plugin_pack/README
-  /usr/share/locale/en_AU/LC_MESSAGES/plugin_pack.mo
-  /usr/share/locale/es_ES/LC_MESSAGES/plugin_pack.mo
-  /usr/share/locale/fr/LC_MESSAGES/plugin_pack.mo
-  /usr/share/locale/vi/LC_MESSAGES/plugin_pack.mo
-  /usr/share/pixmaps/pidgin/protocols/16/napster.png
-  /usr/share/pixmaps/pidgin/protocols/22/napster.png
-  /usr/share/pixmaps/pidgin/protocols/48/napster.png
-
-------------------
-
 Port Notes:
+
+----- version 2.6.0-1 -----
+Version bump for Pidgin 2.6.
 
 ----- version 2.5.1-1 -----
 Initial release for Cygwin 1.7.
