@@ -1,0 +1,11 @@
+ORIG_PN="purple-plugin_pack"
+inherit gnome2
+
+DESCRIPTION="Assortment of plugins for libpurple and Pidgin"
+HOMEPAGE="https://www.guifications.org/projects/purple-plugin-pack"
+# release number must be changed for each version
+SRC_URI="https://www.guifications.org/attachments/download/135/${ORIG_PN}-${PV}.tar.bz2"
+
+PATCH_URI="2.5.1-no-undefined.patch"
+
+MAKEOPTS+=" LDFLAGS=-no-undefined"
