@@ -1,0 +1,16 @@
+inherit gnome2
+
+NAME="pidgin-plugin_pack"
+VERSION=2.7.0
+RELEASE=1
+CATEGORY="Net"
+SUMMARY="Assortment of simple Pidgin plugins"
+DESCRIPTION="The Purple Plugin Pack was originally created as a way to
+distribute an ever growing lists of simple Pidgin plugins. It has since grown
+from its origins of about 6 plugins to nearly 50."
+HOMEPAGE="https://www.guifications.org/"
+SRC_URI="https://bitbucket.org/rekkanoryo/purple-plugin-pack/downloads/purple-plugin-pack-${VERSION}.tar.bz2"
+SRC_DIR="purple-plugin-pack-${VERSION}"
+PATCH_URI="2.5.1-no-undefined.patch"
+
+MAKEOPTS+=" LDFLAGS=-no-undefined"
